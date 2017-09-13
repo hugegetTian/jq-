@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/default/easyui.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+    <!--<script type="text/javascript" src="js/drag.js"></script>    -->
+    <!-- <script type="text/javascript" src="js/angular-1.3.0.js"></script>  
+    <script type="text/javascript" src="js/angular-route.js"></script>  -->
+     <script></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/content.css">
+ </head>
+ <body>
+<div class="g-content">
+    <div class="g-top">
+        <div class="u-menu">
+          <table class="u-listmenu">
+            <tr>
+                <td>
+                  <span> <i class="glyphicon g-left"></i></span>
+                  <span class="u-fl"> <i class="glyphicon g-right"></i></span>
+                  <span class="u-mubg"> <i class="glyphicon shux"></i></span>
+                </td>
+              <td>
+                  <span title="添加到文件夹"> <i class="glyphicon start"></i></span>
+              </td>
+              <td>
+                  <span class="u-mubg" title="图标"> <i class="glyphicon glyphicon-stats"></i> 图标</span>
+              </td>
+
+                <td>
+                  <span class="u-mubg"> <i class="glyphicon glyphicon-qrcode"></i> 画板</span>
+                </td>
+
+                 <td>
+                  <span class="u-mubg"> <i class="glyphicon glyphicon-qrcode"></i> 视图</span>
+                </td>
+                 <td>
+                  <span class="u-mubg"> <i class="glyphicon glyphicon-cog"></i> 设置</span>
+                  <span class="u-mubg"> <i class="glyphicon gsz"></i> 高级</span>
+                  <span class="u-mubg"> <i class="glyphicon huiz"></i> 汇总</span>
+                  <span class="u-mubg"> <i class="glyphicon cs"></i> 参数</span>
+                  <span class="u-mubg"> <i class="glyphicon yc"></i> 影藏</span>
+                </td>
+                 <td>
+                  <span class="u-mubg"> <i class="glyphicon glyphicon-search"></i> mDx</span>
+                  <span class="u-mubg"> <i class="glyphicon glyphicon-share"></i> 导出</span>
+                  <span class="u-mubg"> <i class="glyphicon oth"></i> </span>
+                </td>
+
+            </tr>
+          </table>
+
+        </div>
+    </div>
+    <div class="g-bottom">
+      <div class="m-tdata">
+       
+        <!-- 表格区 -->
+          <div class="u-tdatas">
+             <h3 class="u-ctitle">演示基本功能（切片，告警，图形）</h3>
+            <div class=" u-tcon">
+                  <!-- Large modal -->
+
+            </div>
+
+          </div>
+        <!-- 右侧功能选择区 -->
+            <div class="u-rfun" id="drgeaa">
+                <!-- 待选区 -->
+                <div class="u-dl">
+                  <h5 class="u-ct">待选区</h5>
+                  <div class="u-dch">
+                    <ul>
+                      <li>
+                        <input type="checkbox"><span>商店</span>
+                      </li>
+                         <li>
+                        <input type="checkbox"><span>商店</span>
+                      </li>
+                      <li>
+                       <input type="checkbox"><span>商店</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 第二栏 -->
+                <div class="u-gd">
+                    <h5 class="u-ct">选区</h5>
+                    <!-- u-changbox添加边框 -->
+                    <div class="u-glist u-changbox lichange">
+                      <ul class="listaa">
+                        <li class="changeposi">
+                          <span class="u-msg">商店商店商店商店商店商店</span>
+                          <i class="u-glmg">
+                          </i>
+                        </li>
+                        <li class="changeposi">
+                          <span>商店1</span><i class="u-glmg"></i>
+                        </li>
+                        <li class="changeposi">
+                          <span>商店12</span><i class="u-glmg"></i>
+                        </li>
+                          <li class="changeposi">
+                              <span>商店1fsfdfsdfvadgdd1</span>
+                              <i class="u-glmg"></i>
+                          </li>
+                          <li class="changeposi">
+                              <span>商店1fsfdfsdfvadgdd1</span>
+                              <i class="u-glmg"></i>
+                          </li>
+                          <li class="changeposi">
+                              <span>商店1fsfdfsdfvadgdd1</span>
+                              <i class="u-glmg"></i>
+                          </li>
+                          <li class="changeposi">
+                              <span>商店1fsfdfsdfvadgdd1</span>
+                              <i class="u-glmg"></i>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+                  <!-- 第三栏 -->
+                <div class="u-hl">
+                  <!-- 行选区 -->
+                    <div class="u-hang" id="u-hang">
+                      <h5 class="u-ct">待选区</h5>
+                      <div class="u-hbox lichange u-glist">
+                        <ul class="listaa">
+
+                        </ul>
+                      </div>
+                    </div>
+                       
+                
+                    <div class="u-lie">
+                        <h5 class="u-ct">待d选区</h5>
+                        <div class="u-lbox lichange u-glist">
+                          <ul class="listaa">
+                            <li class="changeposi">
+                              <span>商店cadfadsfsadgas\</span>
+                              <i class="u-glmg"></i>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+
+              
+
+
+                    <!-- 列选区 -->
+
+                </div>
+            </div> 
+      </div>
+          <!-- 弹出框 -->
+          <div class="u-mo">
+    
+                                  <div class="modal fade" tabindex="-1" id="myModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+                                    <div class="modal-dialog" role="document" width="800">
+                                        <div class="modal-content" height="500">
+                                          <div class="modal-header">
+                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="gridSystemModalLabel">编辑已选成员</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                              <table >
+                                                <tr>
+                                                  <td  class=“” width="360">
+                                                    <div class="g-leftprimary">
+
+                                                        <div class="u-plt">  <span>成员数</span> <span>搜索</span></div>
+                                                        <!-- 成员树 -->
+                                                        <div class="u-prcontent ">
+                                                          
+                                                        </div>
+                                                        <!-- 搜索 -->
+                                                         <div class="u-prsearch">
+                                                           <!-- 搜搜关键字 -->
+                                                            <div class="u-scword">
+                                                              <div class="">搜搜关键字： <span> <input type="text"></span> <span class=" u-searchbtn"> 搜索</span> <span class="u-gsearchbtn"> 高级搜索</span></div> 
+                                                              <div class="u-schresult"> 搜索结果：<span class="u-resultshow"> fdf  </span></div>
+                                                            </div>
+                                                            <!-- 搜搜展示 -->
+                                                            <div class="u-listschshow">
+                                                                <ul class="u-listssw">
+                                                                  <li> <i class="u-squre u-size"></i> 南京</li>
+                                                                </ul>
+                                                            </div>
+                                                             <!-- 更多  -->
+                                                             <div class="u-schmore"> <span class="u-morech"> 更多</span></div>
+                                                        </div> 
+                                                    </div>
+                                                  </td>
+                                                  <!-- 中间图标 -->
+                                                  <td width="55">
+                                                    <p class="u-prf"><i class="glyphicon glyphicon-arrow-left"></i></p>
+                                                    <p class="u-prf"><i class="glyphicon glyphicon-arrow-left"></i></p>
+                                                    <p class="u-prf"><i class="glyphicon glyphicon-arrow-right"></i></p>
+                                                  </td>
+                                                  <!-- 已选成员栏、 -->
+                                                  <td width="310">
+                                                    <div class="u-prflh">
+                                                        <div class="u-flsp"> <span>已选成员：</span></div>
+                                                        <div class="u-flhcon">
+                                                          <ul class="u-xz">
+                                                            <li>城市</li>
+                                                            <li>城市</li>
+                                                            <li>城市</li>
+                                                          </ul>
+                                                        </div>
+                                                        
+                                                        <div class="u-xmethod">
+                                                            聚合方式:  <span><input type="radio">切片</span>
+                                                                      <span><input type="radio"> 切块</span>
+                                                        </div>                                                                   
+                                                    </div>
+
+                                                  </td>
+                                                    <!-- 右侧上下图标 -->
+                                                  <td width="50">
+                                                    <p class="u-prf"><i class="glyphicon glyphicon-arrow-up"></i></p>
+                                                    <p class="u-prf"><i class="glyphicon glyphicon-arrow-down"></i></p>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                          
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">确定D</button>
+                                            <button type="button" class="btn btn-default">取消 C</button>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div> 
+          </div>  
+    </div>
+</div>
+
+<div id="mm" class="easyui-menu" style="width:120px;" noline="true">   
+    <div>New</div>   
+    <div>   
+        <span>Open</span>   
+        <div style="width:150px;">   
+            <div><b>Word</b></div>   
+            <div>Excel</div>   
+            <div>PowerPoint</div>   
+        </div>   
+    </div>   
+    <div data-options="iconCls:'icon-save'">Save</div>   
+    <div class="menu-sep"></div>   
+</div>
+  <script>
+    $(function(){
+            $(".u-glmg").bind("click",function(e){
+
+              var p = $(e.target).parent()[0];
+
+              var pp = $(p).parents(".u-rfun")[0];
+              
+
+      console.log(e);
+      $('#mm').menu({    
+    onClick:function(item){    
+        //...    
+    }    
+});
+      $('#mm').menu('show', {    
+  left: e.target.offsetLeft+p.offsetLeft+pp.offsetLeft,   
+  top: e.target.offsetTop+p.offsetTop+pp.offsetTop+53  
+});  
+    });
+     
+    });
+
+
+</script>
+<script src="js/shopposi.js"></script>
+ </body>
+</html>
